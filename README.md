@@ -137,7 +137,7 @@ Example response from the API reference, abridged.
       "location": "Staten Island, NY",
       "extensions": [
         "2 days ago",
-        "19–21 an hour"
+        "19-21 an hour"
       ],
       "share_link": "https://www.google.com/search?ibp=htl;jobs&q=barista+new+york&htidocid=dQNDMQ_R7Yww_6YHAAAAAA%3D%3D&hl=en-US&shndl=37&shmd=H4sIAAAAAAAA_x…",
       "company_name": "Velocci Cafe"
@@ -149,7 +149,7 @@ Example response from the API reference, abridged.
       "location": "Brooklyn, NY",
       "extensions": [
         "3 days ago",
-        "16.50–17.00 an hour"
+        "16.50-17.00 an hour"
       ],
       "share_link": "https://www.google.com/search?ibp=htl;jobs&q=barista+new+york&htidocid=ljb56FK5QU7U3YEtAAAAAA%3D%3D&hl=en-US&shndl=37&shmd=H4sIAAAAAAAA_x…",
       "company_name": "The Showroom Bakehouse"
