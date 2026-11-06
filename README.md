@@ -24,6 +24,7 @@ Use it for job boards, hiring signals or labour market analytics.
 - [Use cases](#use-cases)
 - [Why Autom?](#why-autom)
 - [FAQ](#faq)
+- [Official SDKs](#official-sdks)
 - [Related repositories](#related-repositories)
 - [Support](#support)
 
@@ -224,6 +225,22 @@ Credits per call: `/v1/google/jobs` **1**. See [Autom pricing](https://www.autom
 ### Which languages are supported?
 
 Any language that can make an HTTP request. This README shows Python and TypeScript; the [`examples/`](examples) folder contains cURL, PHP, C#, Go, Java, Ruby and Node.js.
+
+## Official SDKs
+
+Use Autom from your own language with a typed client:
+
+| SDK | Package | Install |
+| --- | --- | --- |
+| Node.js | [`@automdev/sdk`](https://www.npmjs.com/package/@automdev/sdk) | `npm install @automdev/sdk` |
+| Python | [`automdev`](https://pypi.org/project/automdev/) | `pip install automdev` |
+| Go | [`autom-go`](https://pkg.go.dev/github.com/automdev/autom-go) | `go get github.com/automdev/autom-go` |
+| .NET | [`Autom`](https://www.nuget.org/packages/Autom) | `dotnet add package Autom` |
+| Ruby | [`autom`](https://rubygems.org/gems/autom) | `gem install autom` |
+| PHP | [`autom/sdk`](https://packagist.org/packages/autom/sdk) | `composer require autom/sdk` |
+| Java | [`autom-java`](https://github.com/automdev/autom-java) | build from source, see its README |
+| CLI | [`@automdev/cli`](https://www.npmjs.com/package/@automdev/cli) | `npm install -g @automdev/cli` |
+| MCP server | [`@automdev/mcp`](https://www.npmjs.com/package/@automdev/mcp) | `npx -y @automdev/mcp` |
 
 ## Related repositories
 
