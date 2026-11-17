@@ -56,8 +56,11 @@ Scrape Google Jobs results via API and retrieve structured job listings with tit
 | `ltype` | query | number | — | Filter results by work type. Set to `1` to filter for work from home / remote jobs. |
 | `location` | query | string | — | Human-readable location to originate the search from (e.g. `New York, NY`, `Paris, France`). If several locations match, the most popular one is used. Note: `location` and `uule` cannot be used together. |
 | `uule` | query | string | — | Google encoded location parameter. Use for precise geo targeting. Note: `uule` and `location` cannot be used together. |
-| `gl` | query | string | — | Country to use for the Google search (two-letter country code, e.g. `us`, `fr`). |
-| `hl` | query | string | — | Language to use for the Google search (two-letter language code, e.g. `en`, `fr`). |
+| `google_domain` | query | string | — | Google domain to use for the search. Defaults to `google.com`. |
+| `gl` | query | string | — | Country to use for the Google search. Two-letter country code (e.g. `us` for the United States, `uk` for United Kingdom, or `fr` for France). |
+| `hl` | query | string | — | Language to use for the Google search. Two or three-letter language code (e.g. `en`, `es`, `fr`), optionally followed by a region code (e.g. `en-gb`, `es-419`). |
+| `cr` | query | string | — | Limit results to one or more countries. Use `country{XX}` with `\|` as delimiter (e.g. `countryFR\|countryDE`). |
+| `lr` | query | string | — | Limit results to one or more languages. Use `lang_{xx}` with `\|` as delimiter (e.g. `lang_fr\|lang_de`). |
 | `next_page_token` | query | string | — | Token to fetch the next page of results. Returned in the `serpapi_pagination.next_page_token` field of the previous response. |
 
 ### Python example
@@ -138,7 +141,7 @@ Example response from the API reference, abridged.
       "location": "Staten Island, NY",
       "extensions": [
         "2 days ago",
-        "19-21 an hour"
+        "19–21 an hour"
       ],
       "share_link": "https://www.google.com/search?ibp=htl;jobs&q=barista+new+york&htidocid=dQNDMQ_R7Yww_6YHAAAAAA%3D%3D&hl=en-US&shndl=37&shmd=H4sIAAAAAAAA_x…",
       "company_name": "Velocci Cafe"
@@ -150,7 +153,7 @@ Example response from the API reference, abridged.
       "location": "Brooklyn, NY",
       "extensions": [
         "3 days ago",
-        "16.50-17.00 an hour"
+        "16.50–17.00 an hour"
       ],
       "share_link": "https://www.google.com/search?ibp=htl;jobs&q=barista+new+york&htidocid=ljb56FK5QU7U3YEtAAAAAA%3D%3D&hl=en-US&shndl=37&shmd=H4sIAAAAAAAA_x…",
       "company_name": "The Showroom Bakehouse"
